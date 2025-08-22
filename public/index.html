@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jiggy Bank Account Simulator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>🏦 Jiggy Bank Account Simulator</h1>
+
+        <!-- Deposit -->
+         <form action="/deposit" method="post">
+            <input type="number" name="amount" step="0.01" placeholder="Deposit amount" required>
+            <button type="submit"> Deposit</button>
+         </form>
+
+         <!-- Withdrawal -->
+         <form action="/withdraw" method="post">
+            <input type="number" name="amount" step="0.01" placeholder="Withdraw amount" required>
+            <button type="submit"> Withdraw </button>
+         </form>
+
+         <!-- Check Balance -->
+          <a href="/balance" target="_blank"><button type="button">Balance</button></a>
+        
+          <!-- Transaction History -->
+           <a href="/history" target="_blank"><button type="button">View History</button></a>
+    </div>
+    
+</body>
+</html>
